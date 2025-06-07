@@ -2,6 +2,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: Calibri, "Gill Sans", "Gill Sans MT", "Trebuchet MS", sans-serif;
 }
 :root {
   --background-color: #f9fafb;
@@ -12,28 +13,32 @@
 }
 .main-container {
   display: flex;
+  width: 100%;
 }
 .main {
   display: flex;
+  flex: 1;
   flex-direction: column;
   justify-content: flex-start;
-  align-items: center;
+  align-items: flex-start;
   flex-wrap: wrap;
-  padding: 25px;
-  margin: 10px;
+  margin: 0;
+  padding: 0;
 }
 .input-container {
   display: flex;
   flex-direction: row;
-  margin: 20px;
-  justify-content: center;
-  gap: 30px;
+  margin: 20px 0 20px 0;
+  justify-content: flex-start;
+  gap: 70px;
 }
 .form-container {
   display: flex;
-  justify-content: flex-start;
-  padding: 10px;
+  gap: 10px;
+
+  padding: 0px;
   align-items: center;
+  width: 100%;
 }
 
 .msg {
@@ -45,24 +50,80 @@
 form {
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  width: 100%;
+  justify-content: flex-start;
 }
 .submit-btn {
   display: flex;
-  justify-content: center;
+  justify-content: flex-start;
+  padding-top: 20px;
 }
 .submit-btn > button {
-  padding: 10px;
+  padding: 12px 10px 12px 10px;
+  background-color: #596d48;
+  border: none;
+  color: white;
+  width: 20%;
+  border-radius: 8px;
+  font-weight: 800;
+  font-size: 1rem;
+}
+.submit-btn > button:hover {
+  background-color: #82996d;
 }
 
 label {
   display: flex;
   flex-direction: column;
 }
+label > span {
+  font-size: 0.8rem;
+  font-weight: 550;
+  padding-bottom: 3px;
+  color: rgb(70, 68, 68);
+}
 
 input {
   padding: 5px;
   background-color: transparent;
-  border: 1px solid #3838383f;
+  border: 1px solid #e5e7eb;
   border-radius: 5px;
+  width: 250px;
+}
+.msg > span,
+.msg {
+  font-size: 1.5rem;
+  color: black;
+  font-weight: 600;
+  padding-left: 0px;
+}
+.msg {
+  padding-left: 20px;
+}
+
+.Login {
+  padding-top: 30px;
+  padding-left: 15px;
+}
+
+a.login-link {
+  color: #596d48;
+  text-decoration: none;
+  font-weight: 700;
+}
+a.login-link:hover {
+  color: #acc495;
+}
+
+.form-shadow {
+  width: 100%;
+  margin: 0;
+  padding: 30px 0;
+  box-shadow: 2px 5px 15px -3px rgba(33, 33, 33, 0.1);
+}
+.input-main-container,
+h2,
+.submit-btn,
+.Login {
+  padding-left: 40px;
 }
