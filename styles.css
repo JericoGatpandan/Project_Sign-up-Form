@@ -4,12 +4,38 @@
   box-sizing: border-box;
   font-family: Calibri, "Gill Sans", "Gill Sans MT", "Trebuchet MS", sans-serif;
 }
+@font-face {
+  font-family: Norse;
+  src: url(font/Norse-Bold.otf);
+}
 :root {
   --background-color: #f9fafb;
+}
+.logo-container {
+  font-family: Norse;
+  font-size: 4rem;
+  color: white;
+}
+.logo-container {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  top: 150px;
+  width: 34vw;
+  background-color: rgba(0, 0, 0, 0.679);
+  padding: 20px 100px 20px 100px;
+}
+.odin-logo {
+  width: 90px;
+  height: 100%;
+  object-fit: contain;
 }
 .img-container > img {
   height: 100vh;
   object-fit: cover;
+  width: 34vw;
 }
 .main-container {
   display: flex;
@@ -126,4 +152,13 @@ h2,
 .submit-btn,
 .Login {
   padding-left: 40px;
+}
+
+.password:invalid {
+  border: 1px solid red;
+}
+input:focus {
+  border: 2px solid #1e90ff;
+  box-shadow: 0 0 5px rgba(30, 144, 255, 0.5);
+  outline: none;
 }
